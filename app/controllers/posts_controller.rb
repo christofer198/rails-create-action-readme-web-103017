@@ -12,6 +12,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
-
+		@post = Post.create()
+		redirect_to post_path(@post)
 	end
 end
